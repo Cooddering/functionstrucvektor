@@ -1,7 +1,7 @@
 #include <iostream>
 #include "test.h"
 #include <vector>
-
+#include "test.h"
 using namespace std;
 
 
@@ -9,9 +9,13 @@ int main()
 {
 
 
-	   
+		Dataset ds{};
+		ds.load_random(10, 2);
+		ds.preview();
+
+	
       	
-		vector<bilgi> bookListe;
+		/*vector<bilgi> bookListe;
 
 		for (int i = 0; i < 2; i++)
 		{
@@ -30,7 +34,7 @@ int main()
 		
 			bookDisplay(bookListe[i]);
 		}
-
+*/
 		
 		
 
